@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://us.images.westend61.de/0001800167pw/flat-lay-top-view-office-desk-working-space-with-laptop-and-coffee-on-yellow-background-HPIF06453.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+.menu-bar {
+  background: black;
+  text-align: left;
+  font-size: large;
+  transition: all ease 0.5s;
+}
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu-bar ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu-bar ul li {
+  text-decoration: none;
+  color: #fff;
+}
+.menu-bar ul li:hover {
+  background: rgb(from hsl(0, 59%, 56%) r g b);
+  border-radius: 3;
+  transition: all ease 1s;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+  background: rgb(from hsl(0, 59%, 56%) r g b);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+/* .menu-bar ul li:hover + sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+  } */
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: white;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+.menu-bar {
+  background-color: black;
+}
+.sub-menu-1 ul li {
+  color: orange;
+}
+.sub-menu-1 {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 120%;
+  z-index: 1;
+  font-size: small;
+}
